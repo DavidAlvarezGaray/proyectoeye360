@@ -25,11 +25,20 @@
 <body id="page-top">
 <!-- Page Wrapper -->
 <div id="wrapper">
-    @include('layouts.menu')
-    @yield('content')
-    @include('layouts.scrolltop')
+        @include('layouts.menu')
+      <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+        <div id="content">
+            <!-- @include('topbar') -->
+            @include('layouts.topbar')
+            @yield('content')
+        </div>
+
+    </div>
+
 </div>
-    
+@include('layouts.scrolltop') 
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
