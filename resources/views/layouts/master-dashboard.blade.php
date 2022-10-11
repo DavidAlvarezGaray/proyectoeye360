@@ -36,9 +36,9 @@
         </div>
 
     </div>
-
+    @include('layouts.scrolltop') 
 </div>
-@include('layouts.scrolltop') 
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
